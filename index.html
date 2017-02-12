@@ -1,24 +1,99 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css"/>
-        <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap-theme.min.css"/>
-        <script type="text/javascript" src="libs/jquery-3.1.1.min.js"></script>
-        <script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-<header>
-        <section id="logo"></section>
-        <nav>
-    
-    
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Pierre Peychès</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!--        <link rel="stylesheet" type="text/css" href="libs/normalize.css"/>-->
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/rwd.css" />
+    <!--        <script type="text/javascript" src="libs/jquery-3.1.1.min.js"></script>-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o)
+                , m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-91384966-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default" id="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="#"><img src="img/pierre.png" alt="pierre peychès" id="logo" /><span class="title">Pierre Peychès</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" class="link">Entreprenariat</a></li>
+                    <li><a href="#" class="link">Photos</a></li>
+                    <li><a href="#" class="link">Informatique</a></li>
+                    <li><a href="#" class="link">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
     </nav>
-        
-        </header>
-    </body>
+    <section id="content"> Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 flip ">
+                    <div class="box dark-box "> .col-md-1 </div>
+                </div>
+                <div class="col-md-4 flip">
+                    <div class="box light-box"> .col-md-1 </div>
+                </div>
+                <div class="col-md-4 flip">
+                    <div class="box dark-box"> .col-md-1 </div>
+                </div>
+            </div>
+        </div>
+                <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 flip">
+                    <div class="box light-box"> .col-md-1 </div>
+                </div>
+                <div class="col-md-4 flip">
+                    <div class="box dark-box"> .col-md-1 </div>
+                </div>
+                <div class="col-md-4 flip">
+                    <div class="box light-box"> .col-md-1 </div>
+                </div>
+            </div>
+        </div>
+                <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 flip">
+                    <div class="box dark-box"> .col-md-1 </div>
+                </div>
+                <div class="col-md-4 flip">
+                    <div class="box light-box"> .col-md-1 </div>
+                </div>
+                <div class="col-md-4 flip">
+                    <div class="box dark-box"> .col-md-1 </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>
