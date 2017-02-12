@@ -84,18 +84,40 @@ nav .navbar-brand{
 
 }
 .dark-box{
-  
-/*    background-color: #16374A;old*/
-    background-color: #1E4A64/*    background-color: #16374A;old*/
-;
-    
+    background-color: #1E4A64;
 }
 .light-box{
-/*background-color: #3583B0;old*/
       background-color: #225371;
+}
+.flip{
+        height:300px;
+    transform:rotateX(0deg);
+         -webkit-transition: transform 1s; /* Safari */
+    transition: transform 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 250ms;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+
+/*	position: relative;*/
 }
 .flip:hover{
     transform:rotateX(180deg);
-      -webkit-transition: transform 1s; /* Safari */
-    transition: transform 1s;
+}
+.flip-front{
+       transform:rotateX(0deg);
+/*    background: red;*/
+    z-index: 3;
+}
+.flip-back{
+   transform:rotateX(180deg);
+/*    background:green;*/
+}
+.flip-back, .flip-front{
+     backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
