@@ -89,19 +89,22 @@ nav .navbar-brand{
 .light-box{
       background-color: #225371;
 }
+.selected-box{
+    background-color: #409FD6;
+}
 .flip{
         height:300px;
     transform:rotateX(0deg);
          -webkit-transition: transform 1s; /* Safari */
     transition: transform 1s;
     transition-timing-function: ease-in;
-    transition-delay: 250ms;
-    perspective: 1000px;
-    transform-style: preserve-3d;
 
-/*	position: relative;*/
+    perspective: 1000px;
+    transform-style: preserve-3d;/*Ca ne marche pas sans cette ligne*/
+
 }
 .flip:hover{
+        transition-delay: 250ms;
     transform:rotateX(180deg);
 }
 .flip-front{
@@ -120,4 +123,27 @@ nav .navbar-brand{
     left: 0;
     height: 100%;
     width: 100%;
+/*    padding: 15px;*/
 }
+
+
+.text-box {
+      height: 35%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+
+}
+
+
+
+/*Linkedin*/
+.flip .LI-badge-container.horizontal.dark {
+    width: 100%;
+}
+.flip .LI-more-info {
+        height: 100%;
+    padding-bottom: 63px !important;
+}
+
